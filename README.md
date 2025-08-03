@@ -1,48 +1,44 @@
-# Week 1 Assignment - Sensor Data Analysis
+>>Smart Irrigation System
+A machine learning-powered system that predicts the ON/OFF status of sprinklers based on sensor data, helping automate irrigation decisions and promote efficient water usage in agriculture.
 
-This repo contains my Week 1 submission for the internship/course.
+📁 Contents
+Irrigation_System.ipynb – Code for data cleaning, visualization, model training, and saving
 
-## Contents
-- `week1_assignment.ipynb`: Code for feature engineering and data visualization
-- `sensor.csv`: Dataset used
-- `README.md`: Project overview
+Farm_Irrigation_System.pkl – Trained machine learning model
 
-## Summary
-- Added a new feature: average of `sensor_0`, `sensor_1`, `sensor_2`
-- Plotted a correlation heatmap for the first 20 sensors
-- Visualized label distribution using a bar chart
+irrigation_machine.csv – Dataset used for training and testing
 
-## Tools
-Python, Pandas, Matplotlib, Seaborn
+app.py – Streamlit app for real-time predictions
 
-## Week 2 Assignment - Model Building & Serialization
-Objectives:
+✅ Problem Statement
+Manual irrigation often leads to water wastage and inefficient farming. This project aims to develop an automated irrigation system that uses sensor data to control sprinklers intelligently, improving crop health while conserving water.
 
-Preprocessed the data and converted categorical values using LabelEncoder.
+🚀 Features & Highlights
+Multi-label classification using Random Forest to predict multiple sprinkler statuses
 
-Trained a machine learning model using RandomForestClassifier (or similar).
+Cleaned and prepared real-world sensor data for training
 
-Evaluated model using accuracy score and confusion matrix.
+Developed an interactive Streamlit web app for live predictions
 
-Serialized the trained model to a .pkl file using pickle.
+Visualized sensor correlations and label distributions for better understanding
 
-Output:
+Deployed a trained model using joblib for scalable use
 
-Model saved as: Farm_Irrigation_System.pkl
+🛠️ Tech Stack
+Python 3.13
 
-Code for training and exporting included in Irrigation_System.ipynb
+pandas, numpy – Data handling
 
-## How to Run
-Clone or download this repository.
+matplotlib, seaborn – Visualization
 
-Open Irrigation_System.ipynb using Jupyter Notebook or Google Colab.
+scikit-learn – Machine learning
 
-Run all cells to:
+joblib – Model saving/loading
 
-Analyze the dataset
+streamlit – Web app for user interaction
 
-Train the model
+Developed using Jupyter Notebook and VS Code
 
-Export the trained model as a .pkl file
-
+Acknowledgements:
+Thanks to our mentor and the Edunet Foundation for the guidance provided during this project.
 
